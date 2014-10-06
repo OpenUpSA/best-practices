@@ -26,3 +26,9 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 - Never allow root login.
 - Ensure a non-root user such as `ubuntu` allows access from our normal collection of authorized keys, NOT JUST YOURS!
 - Install [New Relic server monitoring](https://rpm.newrelic.com/accounts/767171/servers/get_started#platform=debian)
+- Set a good hostname, so that New Relic monitoring isn't confusing
+
+```
+hostname super-cool-host.code4sa.org
+echo super-cool-host.code4sa.org > /etc/hostname
+```
