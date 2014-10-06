@@ -3,8 +3,17 @@ Best Practices: Server Installs
 
 Best practices when setting up a new server.
 
+Goals
+-----
+
+- consistent, robust, secure
+- well-monitored (if it's not monitored, it's broken)
+- minimal maintenance
+- others can fix problems when you're on holiday
+
+
 Strongly Encouraged
------------------
+-------------------
 
 - Use the latest LTS release of Ubuntu, currently 14.04. Never use a non-LTS release.
 - Ensure Ubuntu is configured to apply security updates automatically:
