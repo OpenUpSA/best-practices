@@ -96,3 +96,5 @@ Prefer platforms that encourage simple, consistent deployments and make collabor
 - Perfect is the enemy of done.
 - Time-box experiments. Commit to a go/no-go deadline after a day or two of work. At that point, honestly discuss with someone else whether you should continue or learn and discard.
 - Try to have at least 2 developers involved on each project, at least with code reviews or design discussions. If you can’t convince one person, then your idea might suck.
+- Focus on top down development. Try to get an end-to-end system up and running as soon as possible. It is tempting to dive in and write code to solve a meaty problem but you will end up spending way more time than you should.
+- Developer time is expensive. As distasteful as it might seem to a developer, sometimes manual data capture/scraping/etc is cheaper than writing code. Hire an intern.
