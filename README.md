@@ -9,4 +9,5 @@ These are recommendations. They're strongly encouraged, but aren't rules. If
 you need to do something differently, check with a colleague and motivate your
 choices.
 
+* [development.md](development.md) - when developing
 * [servers.md](servers.md) - when setting up servers
