@@ -38,6 +38,7 @@ If you have a better practice, speak up and motivate for it.
 - Deploy from the master branch
 - Branch early, commit often
 - Remember: our community judges us on the quality of our code!
+- Follow [PEP8](https://www.python.org/dev/peps/pep-0008) as a python style guide so as to be consistent with other python libraries and tools.
 
 ## Sensitive Data (Credentials, etc.)
 
