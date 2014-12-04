@@ -99,3 +99,4 @@ Prefer platforms that encourage simple, consistent deployments and make collabor
 - Try to have at least 2 developers involved on each project, at least with code reviews or design discussions. If you can’t convince one person, then your idea might suck.
 - Focus on top down development. Try to get an end-to-end system up and running as soon as possible. It is tempting to dive in and write code to solve a meaty problem but you will end up spending way more time than you should.
 - Developer time is expensive. As distasteful as it might seem to a developer, sometimes manual data capture/scraping/etc is cheaper than writing code. Hire an intern.
+- Don't even think about not developing for mobile. Don't do it as an afterthought, bake it in from the start.
