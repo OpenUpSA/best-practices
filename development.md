@@ -18,7 +18,8 @@ If you have a better practice, speak up and motivate for it.
 ## Languages and Frameworks
 
 - Use Python if at all possible. It’s mature, has rich libraries and frameworks, is widely used in the Open Data community, is performant and easy to learn.
-- Use Flask for small sites and APIs. It’s mature, small, simple to use and understand, and has a reasonable collection of plugins.
+- Use Jekyll and GitHub pages for static sites
+- Use [Code4SA's Django template](https://github.com/Code4SA/django-template) for sites that need server-side functionality
 - Use pip to manage dependencies.
 - Use virtualenv to sandbox your projects.
 - Use PostgreSQL if you need a big database (ie. not Mysql), sqlite if you need a small one.
