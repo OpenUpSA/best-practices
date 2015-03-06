@@ -18,7 +18,7 @@ If you have a better practice, speak up and motivate for it.
 ## Languages and Frameworks
 
 - Use Python if at all possible. It’s mature, has rich libraries and frameworks, is widely used in the Open Data community, is performant and easy to learn.
-- Use Jekyll and GitHub pages for static sites
+- Use [Code4SA's Jekyll / GitHub pages template](https://github.com/Code4SA/static-template) for static sites
 - Use [Code4SA's Django template](https://github.com/Code4SA/django-template) for sites that need server-side functionality
 - Use pip to manage dependencies.
 - Use virtualenv to sandbox your projects.
