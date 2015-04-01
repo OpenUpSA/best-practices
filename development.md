@@ -17,7 +17,7 @@ If you have a better practice, speak up and motivate for it.
 
 ## Languages and Frameworks
 
-- Use Python if at all possible. It’s mature, has rich libraries and frameworks, is widely used in the Open Data community, is performant and easy to learn.
+- Our preferred language is Python. It’s mature, has rich libraries and frameworks, is widely used in the Open Data community, is performant and easy to learn.
 - Use [Code4SA's Jekyll / GitHub pages template](https://github.com/Code4SA/static-template) for static sites
 - Use [Code4SA's Django template](https://github.com/Code4SA/django-template) for sites that need server-side functionality
 - Use pip to manage dependencies.
@@ -69,6 +69,7 @@ This data is NOT sensitive:
 - Production deployment should be one command (eg. git push, fab deploy). This will be critical when the server dies (and it will!)
 - Version your dependencies. Use pip freeze to save dependencies into a single requirements.txt file.
 - Don’t worry about separate production and development requirements files, just use one.
+- http://12factor.net/ is highly recommended reading
 
 ## Platforms
 
@@ -76,15 +77,18 @@ Prefer platforms that encourage simple, consistent deployments and make collabor
 
 - Apps that don't require server logic should be hosted using [GitHub Pages](https://pages.github.com/).
 - Apps that require simple server logic such as a database should be deployed to [Heroku](http://heroku.com).
-- Only deploy to our own infrastructure if it's truly required.
+- Only deploy to our own infrastructure if it's truly required, such as when SSL is necessary.
+- When deploying on our own infrastructure, prefer [Dokku](https://github.com/progrium/dokku) on dokku.code4sa.org
 
 ## Databases
 
+- Prefer using Code4SA's central PostgreSQL and Mysql databases. They are backed up automatically regularly.
+- Create a new user and database for each application
 - Always keep customer data backed up
 
 ## Monitoring
 
-- Use New Relic wherever possible (TODO: instructions for integrating into Flask)
+- Always use New Relic for monitoring. The Django app template has it built in.
 
 ## Branding
 
