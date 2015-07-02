@@ -17,9 +17,12 @@ Quickstart
 
 1. Launch an instance of **ami-f2397985** in eu-west-1
 2. Set a useful hostname
+
+```
     sudo su -
     hostname super-cool-host.code4sa.org
     echo super-cool-host.code4sa.org > /etc/hostname
+```
 
 Guidelines
 ----------
