@@ -10,3 +10,23 @@
  - Put a space in empty tags e.g. `<iframe ...> </iframe` or `<script src="..."> </script`
   - Some CMSs rewrite empty tags e.g. as `<iframe ... />` which browsers don't accept properly. Putting a space in there is usually sufficient to stop the CMS from breaking things.
  
+## Testing
+
+### TMG
+
+This only tests the size/shape. It doesn't test Escenic's rewriting of the code.
+
+Insert your embed code in the part of the HTML box in [a fork of a timeslive jsfiddle](http://jsfiddle.net/hawyzhmz/4/#fork) that looks a bit like
+```html
+<!-- ########################################################### -->
+<!-- ########################################################### -->
+<!-- ########################################################### -->
+
+
+<!-- insert your embed code below this line -->
+
+
+<!-- ########################################################### -->
+<!-- ########################################################### -->
+<!-- ########################################################### -->
+```
