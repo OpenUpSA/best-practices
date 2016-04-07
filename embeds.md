@@ -10,11 +10,11 @@
  
 ## CMS-specific
 
+### TMG - Escenic 5.4
+
 - Put a space in empty tags e.g. `<iframe ...> </iframe` or `<script src="..."> </script`
   - Some CMSs rewrite empty tags e.g. as `<iframe ... />` which browsers don't accept properly. Putting a space in there is usually sufficient to stop the CMS from breaking things.
 - unclosed tags like `<br>` must be closed e.g. as `<br/>`
-
-### TMG - Escenic 5.4
 
 Escenic translates back and forth as XML.
  
