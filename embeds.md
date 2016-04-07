@@ -7,8 +7,16 @@
  - Fixed width is bad.
   - Anything wider than 300px will badly affect mobile sites on small devices.
   - If you need to compromise and use fixed width - rather make it work on mobile (300px wide) and weirdly narrow but usable on large devices.
- - Put a space in empty tags e.g. `<iframe ...> </iframe` or `<script src="..."> </script`
+ 
+## CMS-specific
+
+- Put a space in empty tags e.g. `<iframe ...> </iframe` or `<script src="..."> </script`
   - Some CMSs rewrite empty tags e.g. as `<iframe ... />` which browsers don't accept properly. Putting a space in there is usually sufficient to stop the CMS from breaking things.
+- unclosed tags like `<br>` must be closed e.g. as `<br/>`
+
+### TMG - Escenic 5.4
+
+Escenic translates back and forth as XML.
  
 ## Testing
 
