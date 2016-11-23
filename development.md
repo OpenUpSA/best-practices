@@ -9,7 +9,7 @@ If you have a better practice, speak up and motivate for it.
 # Guidelines
 
 - Always do your best to ensure a good user experience
-- Repeatability and consistency is important for reuse
+- Repeatability and consistency are important for reuse
 - Prefer reuse over building from scratch
 - Make data-driven decisions
 
@@ -76,9 +76,7 @@ This data is NOT sensitive:
 Prefer platforms that encourage simple, consistent deployments and make collaboration easy.
 
 - Apps that don't require server logic should be hosted using [GitHub Pages](https://pages.github.com/).
-- Apps that require simple server logic such as a database should be deployed to [Heroku](http://heroku.com).
-- Only deploy to our own infrastructure if it's truly required, such as when SSL is necessary.
-- When deploying on our own infrastructure, prefer [Dokku](https://github.com/progrium/dokku) on dokku.code4sa.org
+- When deploying on our own infrastructure, prefer [Dokku](https://github.com/progrium/dokku)
 
 ## Databases
 
