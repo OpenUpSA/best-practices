@@ -11,3 +11,5 @@ choices.
 
 * [development.md](development.md) - when developing
 * [servers.md](servers.md) - when setting up servers
+* [embeds.md](embeds.md) - When embedding stuff online (and making things to be embedded)
+* [web.md](web.md) - Web development checklist
