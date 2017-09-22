@@ -40,7 +40,6 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 - Never allow root login.
 - Ensure a non-root user such as `ubuntu` allows access from our normal collection of authorized keys, NOT JUST YOURS!
 - Set a good hostname, so that New Relic monitoring isn't confusing
-- Install [New Relic server monitoring](https://rpm.newrelic.com/accounts/767171/servers/get_started#platform=debian)
 
 Building a new Dokku AMI
 ------------------------
@@ -59,7 +58,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
  - Make sure you finish installation to clean up the web-public installer or [manually remove the installer] (https://github.com/dokku/dokku/blob/master/contrib/dokku-installer.py#L151)
 6. `echo code4sa.org > /home/dokku/VHOST`
 7. Setup `/home/dokku/.ssh/authorized_keys` to reflect an existing installation so we can all ssh in as the dokku user
-8. Add the *.code4sa.org `server.key` and `server.crt` to `/home/dokku/.tls/`
+8. Install [New Relic server monitoring](https://rpm.newrelic.com/accounts/767171/servers/get_started#platform=debian)
 9. Install slack integration
 
 ```bash
