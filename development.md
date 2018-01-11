@@ -18,8 +18,8 @@ If you have a better practice, speak up and motivate for it.
 ## Languages and Frameworks
 
 - Our preferred language is Python. It’s mature, has rich libraries and frameworks, is widely used in the Open Data community, is performant and easy to learn.
-- Use [Code4SA's Jekyll / GitHub pages template](https://github.com/Code4SA/static-template) for static sites
-- Use [Code4SA's Django template](https://github.com/Code4SA/django-template) for sites that need server-side functionality
+- Use [OpenUp's Jekyll / GitHub pages template](https://github.com/code4sa/static-template) for static sites
+- Use [OpenUp's Django template](https://github.com/code4sa/django-template) for sites that need server-side functionality
 - Use pip to manage dependencies.
 - Use virtualenv to sandbox your projects.
 - Use PostgreSQL if you need a big database (ie. not Mysql), sqlite if you need a small one.
@@ -34,12 +34,14 @@ If you have a better practice, speak up and motivate for it.
 
 ## Source code
 
-- Store code on Github under the Code4SA account - https://github.com/Code4SA/
+- Store code on Github under the OpenUp account - https://github.com/OpenUp/
 - Always include a README.md and a LICENSE. MIT and Apache are recommended, see http://choosealicense.com/
 - Deploy from the master branch
 - Branch early, commit often
 - Remember: our community judges us on the quality of our code!
 - Follow [PEP8](https://www.python.org/dev/peps/pep-0008) as a python style guide so as to be consistent with other python libraries and tools.
+- Avoid committing commented-out code. Code merged into the master branch should represent the current state and not possible future or past states. If you want to keep hold of another way of implementing something, commit that as a separate branch. That way it doesn't distract from understanding the current implementation, and it's actually easier to compare using standard tooling like `git diff`. If you think we should move to this alternative implementation in the future, make sure your branch is tied to a task in the project management system. See _Avoid TODOs in code_.
+- Avoid TODOs in code. It doesn't have any connection to how we schedule work so it is purely clutter. If you think something should get done, add it to the project's project management system where it can be discussed and prioritised or rejected as part of the normal planning process.
 
 ## Sensitive Data (Credentials, etc.)
 
@@ -56,10 +58,10 @@ Sensitive data includes:
 This data is NOT sensitive:
 
 - Google Analytics ids (it gets sent to the client in any case)
-- New Relic license key 
+- New Relic license key
 
 ## Build, Test, Deploy
- 
+
 **Goal**: simple, consistent, well documented
 
 - Document how to setup a local development environment in your README.md.
@@ -80,7 +82,7 @@ Prefer platforms that encourage simple, consistent deployments and make collabor
 
 ## Databases
 
-- Prefer using Code4SA's central PostgreSQL and Mysql databases. They are backed up automatically regularly.
+- Prefer using OpenUp's central PostgreSQL and Mysql databases. They are backed up automatically regularly.
 - Create a new user and database for each application
 - Always keep customer data backed up
 
@@ -90,8 +92,8 @@ Prefer platforms that encourage simple, consistent deployments and make collabor
 
 ## Branding
 
-- Include our logo, linking to www.code4sa.org
-- Include a link to https://twitter.com/Code4SA - make it easy for users to contact us
+- Include our logo, linking to www.OpenUp.org.za
+- Include a link to https://twitter.com/OpenUpSA - make it easy for users to contact us
 - Include a link to the Github repo for the project.
 - If the data is available on data.code4sa.org, link to it.
 
