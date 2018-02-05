@@ -56,10 +56,10 @@ Sensitive data includes:
 This data is NOT sensitive:
 
 - Google Analytics ids (it gets sent to the client in any case)
-- New Relic license key 
+- New Relic license key
 
 ## Build, Test, Deploy
- 
+
 **Goal**: simple, consistent, well documented
 
 - Document how to setup a local development environment in your README.md.
@@ -69,6 +69,7 @@ This data is NOT sensitive:
 - Production deployment should be one command (eg. git push, fab deploy). This will be critical when the server dies (and it will!)
 - Version your dependencies. Use pip freeze to save dependencies into a single requirements.txt file.
 - Don’t worry about separate production and development requirements files, just use one.
+- Keep the master branch deployable and deployed. That means we only merge to master when we're ready to deploy (as in that day) and someone can assume that the master branch is safe to deploy because it has already or you're busy doing so.
 - http://12factor.net/ is highly recommended reading
 
 ## Platforms
