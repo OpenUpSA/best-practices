@@ -60,3 +60,16 @@ Logging
         },
 `
 Add the handlers as part of the loggers.
+
+
+Production
+-------------------
+In production remember to add these environment variables
+
+* dokku config:set <app name> LOGSTASH_URL=<url to logstash instance>
+
+If you want to make sure that the settings are correct you can run 
+
+`python manage.py elasticapm test`
+
+this will try and send an example error message to elk. It will let you know whether it was successful or not.
