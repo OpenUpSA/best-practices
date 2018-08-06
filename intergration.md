@@ -23,8 +23,7 @@ Environment Variables
 ---------------------
 
 * Add `LOGSTASH_URL = os.environ.get('LOGSTASH_URL', '')`
-* Add `APM_SERVER = os.environ.get('APM_SERVER', '')`
-* Add `ELASTIC_TOKEN = os.environ.get('ELASTIC_TOKEN', '')`
+* Add `APM_SERVER_URL = os.environ.get('APM_SERVER_URL', '')`
 
 
 ELK Settings
@@ -32,8 +31,7 @@ ELK Settings
 
 `ELASTIC_APM = {
     'SERVICE_NAME': '<PROJECT NAME>',
-    'SECRET_TOKEN': ELASTIC_TOKEN,
-    'SERVER_URL': APM_SERVER
+    'SERVER_URL': APM_SERVER_URL
 }
 `
 
@@ -66,7 +64,8 @@ Production
 -------------------
 In production remember to add these environment variables
 
-* dokku config:set <app name> LOGSTASH_URL=<url to logstash instance>
+* `dokku config:set APP_NAME LOGSTASH_URL=<url to logstash instance>`
+* `dokku config:set APP_NAME APM_SERVER_URL=<url to apm instance>`
 
 If you want to make sure that the settings are correct you can run 
 
