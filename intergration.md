@@ -57,6 +57,7 @@ Logging
             'class': 'elasticapm.contrib.django.handlers.LoggingHandler',
         },
 `
+
 Add the handlers as part of the loggers.
 
 
