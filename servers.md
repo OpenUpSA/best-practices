@@ -44,7 +44,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 Building a new Dokku AMI
 ------------------------
 
-1. Start with the latest Ubuntu LTS release (currently 14.04)
+1. Start with the latest Ubuntu LTS release (currently 16.04)
 2. Use the community EBS, HVM image from Amazon
 3. Setup unattended upgrades:
 
@@ -56,9 +56,8 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 4. Install ntp: ``sudo apt-get install ntp``
 5. Install dokku as per http://dokku.viewdocs.io/dokku/getting-started/installation/#installing-the-latest-stable-version
  - Make sure you finish installation to clean up the web-public installer or [manually remove the installer] (https://github.com/dokku/dokku/blob/master/contrib/dokku-installer.py#L151)
-6. `echo code4sa.org > /home/dokku/VHOST`
+6. `echo openup.org.za > /home/dokku/VHOST`
 7. Setup `/home/dokku/.ssh/authorized_keys` to reflect an existing installation so we can all ssh in as the dokku user
-8. Install [New Relic server monitoring](https://rpm.newrelic.com/accounts/767171/servers/get_started#platform=debian)
 9. Install slack integration
 
 ```bash
