@@ -15,13 +15,13 @@ Goals
 Quickstart
 ----------
 
-1. Launch an instance of **ami-f2397985** in eu-west-1
+1. Launch an instance of **ami-0fe2b1d33297a0c21** in eu-west-1
 2. Set a useful hostname
 
 ```
     sudo su -
-    hostname super-cool-host.code4sa.org
-    echo super-cool-host.code4sa.org > /etc/hostname
+    hostname super-cool-host.openup.org.za
+    echo super-cool-host.openup.org.za > /etc/hostname
 ```
 
 Guidelines
