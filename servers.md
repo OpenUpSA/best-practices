@@ -54,11 +54,12 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 ```
 
 4. Install ntp: ``sudo apt-get install ntp``
+5. Install 2GB of swap space as per https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04
 5. Install dokku as per http://dokku.viewdocs.io/dokku/getting-started/installation/#installing-the-latest-stable-version
  - Make sure you finish installation to clean up the web-public installer or [manually remove the installer] (https://github.com/dokku/dokku/blob/master/contrib/dokku-installer.py#L151)
 6. `echo openup.org.za > /home/dokku/VHOST`
 7. Setup `/home/dokku/.ssh/authorized_keys` to reflect an existing installation so we can all ssh in as the dokku user
-9. Install slack integration
+8. Install slack integration
 
 ```bash
 dokku plugin:install https://github.com/ribot/dokku-slack.git
