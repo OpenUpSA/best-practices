@@ -29,17 +29,19 @@ Environment Variables
 ELK Settings
 -------------
 
-`ELASTIC_APM = {
+```python
+ELASTIC_APM = {
     'SERVICE_NAME': '<PROJECT NAME>',
     'SERVER_URL': APM_SERVER_URL
 }
-`
+```
 
 Logging
 -------
 * Add a new handlers for logstash
 
-`'logstash': {
+```python
+'logstash': {
             'level': 'DEBUG',
             'class': 'logstash.TCPLogstashHandler',
             'host': LOGSTASH_URL,
@@ -49,14 +51,15 @@ Logging
             'fqdn': False,
             'tags': ['<PROJECT NAME>']
         },
-`
+```
 * Add handler for elk
 
-`'elasticapm': {
+```
+'elasticapm': {
             'level': 'INFO',
             'class': 'elasticapm.contrib.django.handlers.LoggingHandler',
         },
-`
+```
 
 Add the handlers as part of the loggers.
 
