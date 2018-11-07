@@ -80,6 +80,8 @@ Prefer platforms that encourage simple, consistent deployments and make collabor
 
 - Apps that don't require server logic should be hosted using [GitHub Pages](https://pages.github.com/).
 - When deploying on our own infrastructure, prefer [Dokku](https://github.com/progrium/dokku)
+  - Dokku provides "seamless deploys" - when pushing an update, it starts up the new app and can run some checks on it before updating nginx to point to the new instance, and only then stops the old instance.
+  - Dokku manages config for us - production secrets are provided to the app as environment variables managed from the dokku command line.
 
 ## Databases
 
