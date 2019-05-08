@@ -38,6 +38,7 @@ If you have a better practice, speak up and motivate for it.
 - Always include a README.md and a LICENSE. MIT and Apache are recommended, see http://choosealicense.com/
 - Deploy from the master branch
 - Branch early, commit often
+- Delete fully-merged branches from GitHub.
 - Remember: our community judges us on the quality of our code!
 - Follow [PEP8](https://www.python.org/dev/peps/pep-0008) as a python style guide so as to be consistent with other python libraries and tools.
 - Avoid committing commented-out code. Code merged into the master branch should represent the current state and not possible future or past states. If you want to keep hold of another way of implementing something, commit that as a separate branch. That way it doesn't distract from understanding the current implementation, and it's actually easier to compare using standard tooling like `git diff`. If you think we should move to this alternative implementation in the future, make sure your branch is tied to a task in the project management system. See _Avoid TODOs in code_.
