@@ -74,6 +74,12 @@ This data is NOT sensitive:
 - Don’t worry about separate production and development requirements files, just use one.
 - Keep the master branch deployable and deployed. That means we only merge to master when we're ready to deploy (as in that day) and someone can assume that the master branch is safe to deploy because it has already or you're busy doing so.
 - http://12factor.net/ is highly recommended reading
+- Don't make everything configurable from the start. It makes it unnecessarily hard to know what value is being used.
+  - If a default value would be quietly bad if misconfigured in production, omit a default so misconfiguration in production fails loudly (e.g. `DJANGO_SECRET_KEY`)
+  - If dev and prod use the same value, hardcode it until it needs changing
+  - If a default value is safe, provide a default (e.g. `DATABASE_URL`) - this makes dev really easy
+  - When you finally _have_ to make it configurable, replace the hardcoded value with a config variable according to the above heuristics
+  - e.g. if you can hardcode it n settings.py, do so. The worst you could do is to make it unnecessarily configurable and force someone to piece config together in their mind from settings.py to docker-compose.yml to local.env when it's really just the same value always.
 
 ## Platforms
 
