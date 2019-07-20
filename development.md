@@ -74,6 +74,10 @@ This data is NOT sensitive:
 - Don’t worry about separate production and development requirements files, just use one.
 - Keep the master branch deployable and deployed. That means we only merge to master when we're ready to deploy (as in that day) and someone can assume that the master branch is safe to deploy because it has already or you're busy doing so.
 - http://12factor.net/ is highly recommended reading
+- Make it easy to get a working dev setup, e.g.
+  - docker-compose for dev DB, search index
+  - fixtures for dev/demo data
+- automatically check HTML correctness, e.g. for [unmatched tags](https://github.com/OpenUpSA/biz-portal/commit/a57a551ec933cf674d4e4c5a7300299a69bc822e)
 
 ## Platforms
 
@@ -93,6 +97,8 @@ Prefer platforms that encourage simple, consistent deployments and make collabor
 ## Monitoring
 
 - Always use New Relic for monitoring. The Django app template has it built in.
+. Uptime monitoring, e.g. http://www.uptimedoctor.com/
+- Email alerts of exceptions, e.g. https://sentry.io
 
 ## Branding
 
