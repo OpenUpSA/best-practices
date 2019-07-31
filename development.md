@@ -1,6 +1,6 @@
 # OpenUp Development Best Practices
 
-We build a range of sites, microsites, tools and visualisations for ourselves and our clients. We recommend sticking to these technical best practices to make it it easier for us to delivery quality, and build, deploy and maintain our projects. We do our best to follow industry best practices to make it easier for other groups to build on our projects.
+We build a range of sites, microsites, tools and visualisations for ourselves and our clients. We recommend sticking to these technical best practices to make it easier for us to deliver quality, and build, deploy and maintain our projects. We do our best to follow industry best practices to make it easier for other groups to build on our projects.
 
 These aren’t rules. If you the situation calls for something different, talk to someone and make the most informed decision you can.
 
