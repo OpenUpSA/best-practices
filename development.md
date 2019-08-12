@@ -17,6 +17,7 @@ If you have a better practice, speak up and motivate for it.
 
 - It should be easy to set up a development environment
   - e.g. docker-compose up, perhaps with a couple more setup commands
+  - A frontend developer should be able to set up an app and make a simple change within an hour or so based on instructions and a few commands in the README.
 - It should be easy to reset a development environment
 - It should be easy to get a full site up and running with demo/dev data
   - e.g. using fixtures that could be loaded with one command
