@@ -20,6 +20,7 @@ If you have a better practice, speak up and motivate for it.
 - It should be easy to reset a development environment
 - It should be easy to get a full site up and running with demo/dev data
   - e.g. using fixtures that could be loaded with one command
+  - Using production data for development is not just putting personal data at risk, but also a code smell suggesting we are not able to easily manipulate data for dev/test. Once you write integration tests, fixtures for dev is easy. Once you have dev fixtures, continuous deployment to deploy previews is suddenly in the realm of possibility.
 - The dev environment should be as close to production as possible.
   - Document how to develop on subsystems with external dependencies like mail or search. Mock or dockerise services if at all possible.
 - It should be quick and easy to observe changes made in the code
