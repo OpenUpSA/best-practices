@@ -26,6 +26,11 @@ If you have a better practice, speak up and motivate for it.
 - It should be quick and easy to observe changes made in the code
   - e.g. changes reflected on page reload, without rebuilding containers or bundles.
 - It should be easy to run tests in a development environment.
+- Code formatting isn't a discusstion. Use a linter and language best practises and don't argue about it.
+  - Enforce this in CI, e.g. if the linter introduces diffs, the CI run fails.
+  - Python
+    - isort
+    - black
 
 # Best Practices
 
