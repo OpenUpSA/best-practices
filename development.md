@@ -13,6 +13,19 @@ If you have a better practice, speak up and motivate for it.
 - Prefer reuse over building from scratch
 - Make data-driven decisions
 
+## Development environment
+
+- It should be easy to set up a development environment
+  - e.g. docker-compose up, perhaps with a couple more setup commands
+- It should be easy to reset a development environment
+- It should be easy to get a full site up and running with demo/dev data
+  - e.g. using fixtures that could be loaded with one command
+- The dev environment should be as close to production as possible.
+  - Document how to develop on subsystems with external dependencies like mail or search. Mock or dockerise services if at all possible.
+- It should be quick and easy to observe changes made in the code
+  - e.g. changes reflected on page reload, without rebuilding containers or bundles.
+- It should be easy to run tests in a development environment.
+
 # Best Practices
 
 ## Languages and Frameworks
