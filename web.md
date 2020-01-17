@@ -26,3 +26,4 @@
   - Expand Advanced Options menu
     - Add a couple of required keywords. Ideally words that aren't likely to be shown on error pages and aren't likely to be modified if the page is managed via CMS - this check helps if something breaks but doesn't result in an HTTP error code
     - Add certificate validation so we get notified quickly if a certificate expires
+    - This is mainly for server-side apps. For really important static sites, this is still useful for detecting things like botched deploys or misconfigured DNS
