@@ -9,6 +9,7 @@
 - HTTPS by default
   - We usually use letsencrypt
   - For server-side apps, we use letsencrypt dokku plugin if possible if it's running on dokku, otherwise via certbot
+    - This should be set up for automated renewal
   - HTTP should redirect to HTTPS
 - Do colours/contrasts look ok on cheap old devices?
   - Looking good on a top-end mac or iphone isn't a sufficient test.
