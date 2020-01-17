@@ -7,6 +7,9 @@
 - Submitted to Google/Bing/Yandex (for duckduckgo)?
   - sitemap
 - HTTPS by default
+  - We usually use letsencrypt
+  - For server-side apps, we use letsencrypt dokku plugin if possible if it's running on dokku, otherwise via certbot
+  - HTTP should redirect to HTTPS
 - Do colours/contrasts look ok on cheap old devices?
   - Looking good on a top-end mac or iphone isn't a sufficient test.
 - Does www. work?
@@ -16,3 +19,9 @@
 - AJAX error handlers
   - This is so important
   - This can be as simple as adding `.fail(function( jqXHR, textStatus, errorThrown ) { throw textStatus })` to your jQuery ajax request.
+- Uptime monitor (we usualy use uptimedoctor.com)
+  - 5-minute interval is generally fine - 1-minute interval is useful for sites where a couple of minutes are more serious
+  - Use the HTTPS URL for the site
+  - Expand Advanced Options menu
+    - Add a couple of required keywords. Ideally words that aren't likely to be shown on error pages and aren't likely to be modified if the page is managed via CMS - this check helps if something breaks but doesn't result in an HTTP error code
+    - Add certificate validation so we get notified quickly if a certificate expires
